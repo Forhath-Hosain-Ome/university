@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-app_name = 'home'  # Namespace for URL reversing
+app_name = 'courses'  # Namespace for URL reversing
 
 urlpatterns = [
     
