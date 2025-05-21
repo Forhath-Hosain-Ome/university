@@ -1,9 +1,59 @@
-<div class="container text-center">
-  <p class="mb-2">&copy; {{ year }} MyUniversity. All rights reserved.</p>
-  <nav>
-    <a href="{% url 'home' %}" class="text-light text-decoration-none mx-2">Home</a> |
-    <a href="{% url 'about' %}" class="text-light text-decoration-none mx-2">About</a> |
-    <a href="{% url 'contact' %}" class="text-light text-decoration-none mx-2">Contact</a> |
-    <a href="{% url 'privacy_policy' %}" class="text-light text-decoration-none mx-2">Privacy Policy</a>
-  </nav>
-</div>
+{% block extra_css %}
+<style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  </style>
+{% endblock %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MySite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="{% url 'home:home' %}" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#">Web Design</a></li>
+            <li><a class="dropdown-item" href="#">Development</a></li>
+            <li><a class="dropdown-item" href="#">SEO</a></li>
+          </ul>
+        </li>
+
+        <!-- Another Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="#">Team</a></li>
+            <li><a class="dropdown-item" href="#">Company</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="{% url 'home:contact' %}" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'home:privacy_policy' %}" class="nav-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
