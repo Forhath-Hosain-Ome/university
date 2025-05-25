@@ -59,8 +59,8 @@
             Login Portal
           </a>
           <ul class="dropdown-menu" aria-labelledby="portalDropdown">
-            <li><a class="dropdown-item" href="#">Student Login</a></li>
-            <li><a class="dropdown-item" href="#">Teacher Login</a></li>
+            <li><a class="dropdown-item" href="{% url 'accounts:register' %}">Register</a></li>
+            <li><a class="dropdown-item" href="#">Login</a></li>
           </ul>
         </li>
         {% endif %}
