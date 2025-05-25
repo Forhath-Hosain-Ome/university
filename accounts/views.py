@@ -4,6 +4,7 @@ from .forms import registerForm
 
 # Create your views here.
 def login(request):
+    
     return render(request, 'accounts/login.html')
 
 def register(request):
@@ -16,6 +17,9 @@ def register(request):
     else:
         form = registerForm()
     return render(request, 'accounts/register.html', {'form' : form})
+
+def profile(request):
+    return render(request, 'accounts/profile.html')
 
 def profile(request):
     return render(request, 'accounts/profile.html')

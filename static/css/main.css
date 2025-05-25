@@ -1,0 +1,17 @@
+*,a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card_custom {
+    color: #ffffff;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #000000 no-repeat center center;
+    background-size: cover;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}

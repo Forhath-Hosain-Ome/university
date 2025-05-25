@@ -129,17 +129,19 @@ USE_TZ = True
 
 # URL to use when referring to static files (CSS, JavaScript, images) in templates
 STATIC_URL = '/static/'
-
-# Absolute path to the directory where collectstatic will collect static files for deployment
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Often used in production
-
-# Additional locations the staticfiles app will traverse
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Often used in production
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # This is for development
+   BASE_DIR / "static",
 ]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),  # This is for development
+# ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 
