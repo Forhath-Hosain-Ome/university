@@ -1,5 +1,28 @@
 {% extends "base.html" %}
 
-{% block content %}
-  <h1>Welcome to the Index Page</h1>
+
+{% block main_content %}
+  <main class="main-content section" role="main" id="main-content">
+    <div class="container">
+      <div class="cover">
+        <div class="row g-4 text-end mb-5">
+          <div class="col-6 col-md-12">
+            <h2>Welcome to the Index Page</h2>
+            <p>This is the main content area of the index page.</p>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-3 a_button">
+            <a href="#">Browse Course</a>
+          </div>
+          <div class="col-3 a_button">
+            <a href="#">Benifits</a>
+          </div>
+          <div class="col-3 a_button">
+            <a href="#">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 {% endblock %}

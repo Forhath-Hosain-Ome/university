@@ -1,4 +1,5 @@
 from django.db import models
+from courses.models import Course
 
 # Create your models here.
 class Account(models.Model):
@@ -14,6 +15,7 @@ class Account(models.Model):
     
 class profile(models.Model):
     user = models.OneToOneField(Account, on_delete=models.CASCADE)
+    user_course = models.ManyToManyField(Course, blank=True, related_name='student')
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=30, blank=True)
     bio = models.TextField(blank=True)

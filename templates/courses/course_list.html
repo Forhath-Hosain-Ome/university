@@ -1,0 +1,27 @@
+<div id="course_list" class="course_list">
+    <div class="container">
+        <div class="row g-4 text-center mb-5">
+            <div class="col-12">
+                <h2>Available Courses</h2>
+                <p>Explore our diverse range of courses designed to enhance your skills and knowledge.</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for course in courses %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ course.title }}</h5>
+                        <p class="card-text">{{ course.description|truncatewords:20 }}</p>
+                        <p class="card-text"><strong>Start Date:</strong> {{ course.start_date }} </p>
+                        <p class="card-text"><strong>End Date:</strong> {{ course.end_date }} </p>
+                        <p class="card-text"><strong>Price:</strong> ${{ course.price }}</p>
+                        <a href="{% url 'course_detail' course.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
