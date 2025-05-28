@@ -22,3 +22,8 @@ class registerForm(forms.ModelForm):
         if Account.objects.filter(username=username).exists():
             raise forms.ValidationError("Username already exists.")
         return username
+    
+class login_Auth(forms.ModelForm):
+    class Meta:
+        model = Account
+        fields = ['email', 'password']
