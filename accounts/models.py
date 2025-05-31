@@ -21,7 +21,7 @@ class Account(UserFields):
         verbose_name = 'Account'
         verbose_name_plural = 'Accounts'
         db_table = 'Account'
-        ordering = 'username'
+        ordering = ['username']
     
 class Profile(UserFields):
     user = models.OneToOneField(Account, on_delete=models.CASCADE)
@@ -39,4 +39,4 @@ class Profile(UserFields):
         verbose_name = 'Profile'
         verbose_name_plural = 'Profile'
         db_table = 'Profile'
-        ordering = 'username'
+        ordering = ['username']

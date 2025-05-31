@@ -26,7 +26,7 @@ class registerForm(forms.ModelForm):
 class Profile_details(forms.ModelForm):
     class Meta:
         model = Profile
-        filds = ['username', 'email', 'user_course', 'first_name', 'last_name', 'bio', 'date_of_birth', 'address', 'phone_number']
+        fields = ['username', 'email', 'user_course', 'first_name', 'last_name', 'bio', 'date_of_birth', 'address', 'phone_number']
 
 
 class login_Auth(forms.ModelForm):
