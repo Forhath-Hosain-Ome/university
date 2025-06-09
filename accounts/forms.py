@@ -29,7 +29,7 @@ class Profile_details(forms.ModelForm):
         fields = ['username', 'email', 'user_course', 'first_name', 'last_name', 'bio', 'date_of_birth', 'address', 'phone_number']
 
 
-class login_Auth(forms.ModelForm):
+class login_Auth(forms.Form):
     class Meta:
         model = Account
         fields = ['email', 'password']
