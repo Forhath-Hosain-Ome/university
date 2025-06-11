@@ -30,6 +30,6 @@ class Profile_details(forms.ModelForm):
 
 
 class login_Auth(forms.Form):
-    class Meta:
-        model = Account
-        fields = ['email', 'password']
+    identifier = forms.CharField(label="Username or Email")
+    password = forms.CharField(widget=forms.PasswordInput)
+ 
