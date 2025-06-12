@@ -16,10 +16,10 @@ form {
 }
 
 .section {
-    width: 100vw;
+    width: 100%;
     height: calc(100vw * 1/3);
     padding: 2rem 0;
-    margin: 0 auto;
+    margin: 0;
     background: #000000 no-repeat center center fixed url("https://picsum.photos/200/300/?blur=5");
     background-size: cover;
 }
