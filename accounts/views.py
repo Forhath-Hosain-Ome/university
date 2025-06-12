@@ -12,7 +12,6 @@ def login_form(request):
         if form.is_valid():
             identifier = form.cleaned_data.get('identifier')
             password = form.cleaned_data.get('password')
-
             if identifier is not None and '@' in identifier:
                 try:
                     user_obj = User.objects.get(email=identifier)
@@ -21,8 +20,6 @@ def login_form(request):
                     username = None
             else:
                 username = identifier
-
-
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)

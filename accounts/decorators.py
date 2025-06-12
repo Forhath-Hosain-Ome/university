@@ -10,7 +10,6 @@ def group_required(*group_names):
         return False
     return user_passes_test(check_group, login_url="accounts/login")
 
-
 admin_required = group_required("admin")
 editor_required = group_required("editor","admin")
 author_required = group_required("auhor","editor","admin")
