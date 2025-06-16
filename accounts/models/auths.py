@@ -9,7 +9,7 @@ Roles = (
 )
 
 class User(AbstractUser):
-    role = models.Choices(Roles, default = 'guest')
+    role = models.CharField(max_length=20,choices = Roles, default = 'guest')
 
     def __str__(self):
         return self.username

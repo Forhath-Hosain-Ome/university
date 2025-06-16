@@ -4,7 +4,6 @@ from .auths import User
 
 class Profile(basemodel):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    # user_course = models.ManyToManyField(Course, blank=True, related_name='student')
     bio = models.TextField(blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
     address = models.CharField(max_length=255, blank=True)
@@ -16,4 +15,5 @@ class Profile(basemodel):
         verbose_name = 'Profile'
         verbose_name_plural = 'Profile'
         db_table = 'Profile'
-        ordering = ['username']
+
+
