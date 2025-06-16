@@ -79,7 +79,7 @@ DATABASES = {
         #'PORT': '3306',
     }
 }
-
+AUTH_USER_MODEL = 'accounts.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -140,5 +140,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 Login_URL = 'accounts:login'
 
-auth_user_model = 'accounts.Account'
-# AUTH_USER_MODEL = 'accounts.Account'
