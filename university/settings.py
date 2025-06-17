@@ -26,14 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-<<<<<<< HEAD
-    'django_extensions',
-    'rest_framework',
-
-=======
     'rest_framework',
     'django_extensions',
->>>>>>> config
 
     'home.apps.HomeConfig',
     'courses.apps.CoursesConfig',
@@ -41,10 +35,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'admissons.apps.AdmissonsConfig',
     'depertments.apps.DepertmentsConfig',
-<<<<<<< HEAD
-=======
     'core.apps.CoreConfig'
->>>>>>> config
 ]
 
 MIDDLEWARE = [

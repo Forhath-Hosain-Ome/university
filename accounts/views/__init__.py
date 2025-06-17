@@ -1,4 +1,4 @@
-from .auths import *
 from .profile import profile
-from .register import register
-from .session import login_form, logout_view
+# from .SignInView import SignInView
+from .SignOutView import SignOutView
+from .SignUpView import SignUpView
