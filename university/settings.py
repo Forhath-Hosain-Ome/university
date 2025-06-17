@@ -1,7 +1,6 @@
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -27,9 +26,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+<<<<<<< HEAD
     'django_extensions',
     'rest_framework',
 
+=======
+    'rest_framework',
+    'django_extensions',
+>>>>>>> config
 
     'home.apps.HomeConfig',
     'courses.apps.CoursesConfig',
@@ -37,6 +41,10 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'admissons.apps.AdmissonsConfig',
     'depertments.apps.DepertmentsConfig',
+<<<<<<< HEAD
+=======
+    'core.apps.CoreConfig'
+>>>>>>> config
 ]
 
 MIDDLEWARE = [
@@ -84,7 +92,7 @@ DATABASES = {
         #'PORT': '3306',
     }
 }
-
+AUTH_USER_MODEL = 'accounts.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -145,5 +153,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 Login_URL = 'accounts:login'
 
-auth_user_model = 'accounts.Account'
-# AUTH_USER_MODEL = 'accounts.Account'

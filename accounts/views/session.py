@@ -1,11 +1,12 @@
-from django.shortcuts import render,redirect
-from django.contrib.auth import authenticate, login, logout
-from .forms import registerForm,login_Auth
-from django.contrib import messages
+from django.shortcuts import redirect, render
+from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.models import User
 
 
-# Create your views here.
+from .forms import registerForm,login_Auth
+
+
+
 def login_form(request):
     if request.method == 'POST':
         form = login_Auth(request.POST)
@@ -33,23 +34,6 @@ def login_form(request):
     }
     return render(request, 'accounts/login.html', context)
 
-def register(request):
-    if request.method == 'POST':
-        form = registerForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('home:home')
-        else:
-            messages.error(request,"Please enter valid data")
-    else:
-        form = registerForm()
-    context = {
-        'form' : form
-    }
-    return render(request, 'accounts/register.html', context)
-
-def profile(request):
-    return render(request, 'accounts/profile.html')
 
 def logout_view(request):
     logout(request)
