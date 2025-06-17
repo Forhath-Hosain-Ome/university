@@ -3,11 +3,22 @@
 Simple University Managment System For My Personal Testing And Developing My Skills.
 
 ## 🚀 Features
+-----Admin Access-----
+- Full Site Access
+- All Other Users Access
 
-- View Task
-- Add Task
-- Edit Task
-- Delete Task
+-----Admin And Teacher Access-----
+- Add Resourses
+- Add Materials
+- View Courses
+- Add Courses
+- Edit Courses
+- Delete Courses
+
+- -----Student Access-----
+- Enrollment
+- Study
+- Review
 
 ## 📦 Installation
 
