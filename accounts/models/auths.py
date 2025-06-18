@@ -1,16 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
-Roles = (
-    ('admin', 'Admin'),
-    ('student', 'Student'),
-    ('teacher', 'Teacher'),
-    ('guest', 'Guest'),
-)
+from core.models import ChoiceConstants
+from django.contrib.auth import validators
 
 class User(AbstractUser):
-    password = models.CharField()
-    role = models.CharField(max_length=20,choices = Roles, default = 'guest')
+    password = models.CharField(
+    )
+    role = models.CharField(
+        max_length=20,choices = ChoiceConstants.Role.choices, default = ChoiceConstants.Role.STUDENT
+        )
 
     class Meta:
         verbose_name = 'User'

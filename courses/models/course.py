@@ -18,4 +18,4 @@ class Course(basemodel):
         return self.title
     
     class Meta:
-        db_name = 'Course'
+        db_table = 'Course'
