@@ -1,7 +1,7 @@
 from django.contrib.auth import login
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from serializers import SignInSerializer
+from accounts.serializers import SignInSerializer
 
 # class SignInView(APIView):
     # def post(self, request):
@@ -11,3 +11,6 @@ from serializers import SignInSerializer
     #         return Response({"message": "Login successful"}, status=200)
     #     return Response(serializer.errors, status=401)
 
+
+def SignInView(request):
+    pass

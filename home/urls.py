@@ -4,8 +4,8 @@ from . import views
 app_name = 'home'  # Namespace for URL reversing
 
 urlpatterns = [
-    # path('', views.home, name='home'),
-    # path('about/', views.about, name='about'),
-    # path('contact/', views.contact, name='contact'),
-    # path('privacy_policy/', views.privacy_policy, name='privacy_policy'),
+    path('', views.HomeView, name='home'),
+    path('about/', views.AboutView, name='about'),
+    path('contact/', views.ContactView, name='contact'),
+    path('privacy_policy/', views.Privacy_PolicyView, name='privacy_policy'),
 ]
