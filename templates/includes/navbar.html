@@ -63,7 +63,10 @@
               <li><a class="dropdown-item" href="{% url 'accounts:login' %}">Login</a></li>
             {% else %}
               <li><a href="{% url 'accounts:profile' %}" class="dropdown-item">Profile</a></li>
-              <li><a href="{% url 'accounts:logout' %}" class="dropdown-item">Log Out</a></li>
+              <form action="{% url 'accounts:logout' %}" method="post">
+                {% csrf_token %}
+                <li><button class="dropdown-item">Log Out</button></li>
+              </form>
             {% endif %}
           </ul>
         </li>
