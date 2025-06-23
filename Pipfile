@@ -8,8 +8,8 @@ django = "*"
 mysqlclient = "*"
 pymysql = "*"
 django-defaults = "*"
-djangorestframework = "*"
 pillow = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
