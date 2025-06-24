@@ -5,7 +5,7 @@ from courses.models import Course
 from courses.serializers import CourseSerializer
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def course_crud(request, pk):
+def Course_crud(request, pk):
     course = Course.objects.get(pk=pk)
     if request.method == 'GET':
         serializer = CourseSerializer(course)

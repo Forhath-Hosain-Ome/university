@@ -1,2 +1,2 @@
-from courses.views import course_crud
-from courses.views import course_list
+from .course_crud import Course_crud
+from .course_list import Course_list
