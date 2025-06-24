@@ -1,1 +1,1 @@
-from .depertment import depertment
+from .depertment import Depertment

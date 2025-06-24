@@ -3,7 +3,7 @@ from core.models import basemodel, ChoiceConstants
 
 
 
-class depertment(basemodel):
+class Depertment(basemodel):
     title = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=99)
     major = models.CharField(max_length=10,choices=ChoiceConstants.Depertment,default='')

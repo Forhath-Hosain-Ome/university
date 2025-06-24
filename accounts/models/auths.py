@@ -4,8 +4,7 @@ from core.models import ChoiceConstants
 from django.contrib.auth import validators
 
 class User(AbstractUser):
-    password = models.CharField(
-    )
+    password = models.CharField()
     role = models.CharField(
         max_length=20,choices = ChoiceConstants.Role.choices, default = ChoiceConstants.Role.STUDENT
         )
