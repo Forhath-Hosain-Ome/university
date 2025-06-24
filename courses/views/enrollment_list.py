@@ -14,6 +14,4 @@ def enrollment_create(request):
         serializer = EnrollmentSerializers(request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response()
-    else:
-        pass
+            return Response(serializer.data, status=status.HTTP_200_OK)

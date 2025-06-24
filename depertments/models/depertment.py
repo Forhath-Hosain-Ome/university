@@ -1,14 +1,14 @@
 from django.db import models
-from core.models import basemodel
+from core.models import basemodel, ChoiceConstants
 
-Depertment_choice = (
-    ("CSE",'CSE'),
-    ('EEE','EEE'),
-    ('CIVIL','CIVIL'),
-)
+
 
 class depertment(basemodel):
     title = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=99)
-    major = models.CharField(max_length=10,choices=Depertment_choice,default='')
+    major = models.CharField(max_length=10,choices=ChoiceConstants.Depertment,default='')
     images = models.ImageField(upload_to='media/images')
+
+    def __str__(self):
+        return self.title
+    
