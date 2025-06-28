@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from core.models import ChoiceConstants
-from django.contrib.auth import validators
 
 class User(AbstractUser):
     password = models.CharField()
