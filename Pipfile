@@ -11,6 +11,7 @@ django-defaults = "*"
 pillow = "*"
 djangorestframework = "*"
 npm = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

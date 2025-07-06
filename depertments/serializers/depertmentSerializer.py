@@ -1,7 +1,7 @@
-from rest_framework import serializers
+from core.serializers import rf_ModelSerializer
 from depertments.models import depertment
 
-class DepertmentSerializer(serializers.ModelSerializer):
+class DepertmentSerializer(rf_ModelSerializer):
     class Meta:
         model = depertment
         fields = '__all__'

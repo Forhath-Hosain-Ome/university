@@ -1,11 +1,7 @@
-from rest_framework import generics
+from core.views import Api_Edit, Api_List
 from depertments.models import Depertment
 from depertments.serializers import DepertmentSerializer
 
-class DepertmentList(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
+class DepertmentList(Api_Edit, Api_List):
     queryset = Depertment.objects.all()
     serializer_class = DepertmentSerializer
-
-# class DepertmentEdit(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Depertment.objects.all()
-#     serializer_class = DepertmentSerializer

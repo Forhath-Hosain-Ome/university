@@ -1,7 +1,7 @@
-from rest_framework import serializers
+from core.serializers import rf_ModelSerializer
 from courses.models import Course
 
-class CourseSerializers(serializers.ModelSerializer):
+class CourseSerializers(rf_ModelSerializer):
     class Meta:
         model = Course
         fields = '__all__'
