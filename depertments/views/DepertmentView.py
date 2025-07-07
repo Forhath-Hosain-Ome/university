@@ -1,7 +1,7 @@
-from core.views import Api_Edit, Api_List
+from core.views import Api_Crud
 from depertments.models import Depertment
 from depertments.serializers import DepertmentSerializer
 
-class DepertmentList(Api_Edit, Api_List):
+class DepertmentList(Api_Crud):
     queryset = Depertment.objects.all()
     serializer_class = DepertmentSerializer

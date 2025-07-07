@@ -1,9 +1,9 @@
 from django.contrib.auth.models import User
-from rest_framework import serializers
+from core.serializers import rf_serializers, rf_ModelSerializer
 
 
-class SignUpSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
+class SignUpSerializer(rf_ModelSerializer):
+    password = rf_serializers.CharField(write_only=True)
 
     class Meta:
         model = User

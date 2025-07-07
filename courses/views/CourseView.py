@@ -1,13 +1,13 @@
-from rest_framework import generics
-from courses.models import Course
-from courses.serializers import CourseSerializers
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+# from rest_framework import generics
+# from courses.models import Course
+# from courses.serializers import CourseSerializers
+# from rest_framework.permissions import IsAdminUser, IsAuthenticated
 
-class CourseList(generics.ListCreateAPIView):
-    queryset = Course.objects.all()
-    serializer_class = CourseSerializers
-    # permission_classes = [IsAuthenticated]
-    permission_classes = [IsAdminUser]
+# class CourseList(generics.ListCreateAPIView):
+#     queryset = Course.objects.all()
+#     serializer_class = CourseSerializers
+#     # permission_classes = [IsAuthenticated]
+#     permission_classes = [IsAdminUser]
 
 
 

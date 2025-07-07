@@ -1,1 +1,1 @@
-from rest_framework.generics import RetrieveUpdateDestroyAPIView as Api_Edit,ListCreateAPIView as Api_List
+from rest_framework.viewsets import ModelViewSet as Api_Crud

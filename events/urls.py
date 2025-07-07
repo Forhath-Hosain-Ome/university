@@ -1,9 +1,16 @@
-from django.urls import path
-from events.views import *
+from django.urls import path, include
+from events.views import EventView
+from core.urls import router
 
-app_name = 'event'  # Namespace for URL reversing
+router.register(r'event', EventView, basename='event')
+
+
+
+
+app_name = 'event'
 
 urlpatterns = [
-    path('e',EventView.as_view()),
-    path('e/<int:pk>',EventView.as_view())
+    # path('e',EventView.as_view()),
+    # path('e/<int:pk>',EventView.as_view()),
+    path('', include(router.urls))
 ]

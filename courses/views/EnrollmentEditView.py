@@ -1,9 +1,9 @@
-from rest_framework.generics import RetrieveUpdateDestroyAPIView as crude
+from core.views import Api_Crud
 from courses.models import CourseEnrollment
 from courses.serializers import CourseSerializers
 
 
 
-class EnrollmentEdit(crude):
+class EnrollmentEdit(Api_Crud):
     queryset = CourseEnrollment.objects.all()
     serializer_class = CourseSerializers

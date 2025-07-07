@@ -3,7 +3,9 @@
 # from .enrollment_edit import enrollment_crud
 # from .enrollment_list import enrollment_create
 
-from .CourseView import CourseList
+# from .CourseView import CourseList
+# from .CourseEditView import CourseEdit
+# from .EnrollmentView import EnrollmentList
+# from .EnrollmentEditView import EnrollmentEdit
 from .CourseEditView import CourseEdit
-from .EnrollmentView import EnrollmentList
 from .EnrollmentEditView import EnrollmentEdit
