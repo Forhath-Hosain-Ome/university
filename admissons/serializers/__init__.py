@@ -1,1 +1,1 @@
-from .admissonserializer import AdmissonSerializer
+from .admisson_serializer import AdmissonSerializer

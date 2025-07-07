@@ -1,5 +1,5 @@
 from django.db import models
-from .CourseModel import Course
+from .course_model import Course
 from accounts.models import User
 from core.models import basemodel
 

@@ -1,1 +1,1 @@
-from .depertmentSerializer import DepertmentSerializer
+from .depertment_serializer import DepertmentSerializer

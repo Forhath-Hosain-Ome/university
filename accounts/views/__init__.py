@@ -1,4 +1,4 @@
 from .profile import profile
-from .SignInView import SignInView
-from .SignOutView import SignOutView
-from .SignUpView import SignUpView
+from .sign_in_view import SignInView
+from .sign_out_view import SignOutView
+from .sign_up_view import SignUpView

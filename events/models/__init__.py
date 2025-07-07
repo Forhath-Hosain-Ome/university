@@ -1,1 +1,1 @@
-from .EventModel import Event
+from .event_model import Event

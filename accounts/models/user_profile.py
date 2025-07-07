@@ -1,6 +1,6 @@
 from django.db import models
 from core.models import basemodel
-from .auths import User
+from .user_account import User
 from core.models import ChoiceConstants
 
 class Profile(basemodel):

@@ -1,1 +1,1 @@
-from .admissonView import AdmissonList
+from .admisson_view import AdmissonList

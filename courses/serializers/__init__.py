@@ -1,2 +1,2 @@
-from .CourseSerializer import CourseSerializers
-from .EnrollmentSerializer import EnrollmentSerializers
+from .course_serializer import CourseSerializers
+from .enrollment_serializer import EnrollmentSerializers

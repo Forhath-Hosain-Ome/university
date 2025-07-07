@@ -1,2 +1,2 @@
-from .SignInSerializer import SignInSerializer
-from .SignUpSerializer import SignUpSerializer
+from .sign_in_serializer import SignInSerializer
+from .sign_up_seriaizer import SignUpSerializer

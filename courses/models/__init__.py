@@ -1,2 +1,2 @@
-from .CourseModel import Course
-from .EnrollmentModel import CourseEnrollment
+from .course_model import Course
+from .enrollment_model import CourseEnrollment

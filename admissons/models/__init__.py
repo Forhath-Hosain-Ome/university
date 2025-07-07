@@ -1,1 +1,1 @@
-from .admisson import AdmissonModel
+from .admisson_model import AdmissonModel

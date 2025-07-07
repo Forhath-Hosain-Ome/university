@@ -1,1 +1,1 @@
-from .DepertmentView import DepertmentList
+from .depertment_view import DepertmentList
